@@ -4,6 +4,6 @@ I use the Ubuntu Image on [DigitalOcean](http://www.digitalocean.com) for my dev
 ## installation
 Clone then run setup.sh:
 
-  git clone git@github.com:lessan/dotfiles.git
+    git clone git@github.com:lessan/dotfiles.git
 
-  dotfiles/setup.sh
+    dotfiles/setup.sh
