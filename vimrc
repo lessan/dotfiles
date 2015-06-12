@@ -4,8 +4,13 @@ set nocompatible
 
 
 " --------------- load external files ---------------
-execute pathogen#infect()
-syntax on
+call plug#begin('~/.vim/plugged')
+
+"Plug 'junegunn/seoul256.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'kchmck/vim-coffee-script'
+
+call plug#end()
 
 
 " --------------- indentation ---------------
