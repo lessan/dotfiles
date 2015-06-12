@@ -1,5 +1,3 @@
-alias reload='. ~/.bash_profile'
-
 alias g='git'
 alias gs='git status'
 alias gc='git commit'
@@ -12,7 +10,8 @@ alias gl='git log'
 alias gpush='git push'
 alias gpull='git pull'
 
+alias rs='rails server'
+
 alias cdd='cd ~/drum/'
 alias cdr='cd ~/rope/'
 alias cdda='cd ~/drum_admin/'
-alias rs='rails server'
