@@ -1,0 +1,18 @@
+alias reload='. ~/.bash_profile'
+
+alias g='git'
+alias gs='git status'
+alias gc='git commit'
+alias ga='git add'
+alias gco='git checkout'
+alias gb='git branch'
+alias gm='git merge'
+alias gd='git diff'
+alias gl='git log'
+alias gpush='git push'
+alias gpull='git pull'
+
+alias cdd='cd ~/drum/'
+alias cdr='cd ~/rope/'
+alias cdda='cd ~/drum_admin/'
+alias rs='rails server'
