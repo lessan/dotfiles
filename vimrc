@@ -4,6 +4,12 @@ set nocompatible
 
 
 " --------------- load external files ---------------
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall
+endif
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/seoul256.vim'
@@ -100,6 +106,10 @@ let g:ctrlp_working_path_mode = 'w'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/log/*,*/vendor/bundle,*/vendor/bower*,*/node_modules,*/coverage/*
 
 
+" --------------- keyboard shortcuts ---------------
+noremap <C-d> :sh<cr>    " ctrl-d to switch between vim and a new shell
+
+
 " --------------- application settings ---------------
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
@@ -108,7 +118,6 @@ set nobackup             " don't create a backup file
 set noswapfile           " don't create a swap file
 
 
-filetype plugin indent on
 augroup vimrcEx
   autocmd!
 

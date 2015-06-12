@@ -14,6 +14,3 @@ relink .bash_aliases $DOTFILES/bash_aliases
 relink .gemrc        $DOTFILES/gemrc
 relink .gitconfig    $DOTFILES/gitconfig
 relink .vimrc        $DOTFILES/vimrc
-
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

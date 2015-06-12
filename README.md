@@ -9,3 +9,5 @@ Clone then run setup.sh:
     git clone git@github.com:lessan/dotfiles.git
 
     dotfiles/setup.sh
+
+The first time you run vim, Plug will be downloaded and plugins installed.
