@@ -6,7 +6,7 @@ set nocompatible
 " --------------- load external files ---------------
 call plug#begin('~/.vim/plugged')
 
-"Plug 'junegunn/seoul256.vim'
+Plug 'junegunn/seoul256.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'kchmck/vim-coffee-script'
 
@@ -35,10 +35,8 @@ set list listchars=tab:»·,trail:·,nbsp:·  " display extra whitespace
 
 " --------------- color scheme ---------------
 set t_Co=256             " set the terminal to 256 colors
-colorscheme lucius
-LuciusDark
-highlight NonText guibg=#060606
-highlight Folded  guibg=#0A0A0A guifg=#9090D0
+let g:seoul256_background = 235  " Range:   233 (darkest) ~ 239 (lightest)
+colo seoul256
 
 
 " --------------- navigation ---------------
