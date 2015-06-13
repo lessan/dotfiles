@@ -16,6 +16,11 @@ Plug 'junegunn/seoul256.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'kchmck/vim-coffee-script'
 
+Plug 'bling/vim-airline'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'bubblegum'
+let g:airline_powerline_fonts = 1   " requires fonts installed from https://github.com/powerline/fonts
+
 call plug#end()
 
 
