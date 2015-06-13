@@ -66,6 +66,10 @@ nnoremap <c-l> <c-w>l
 set splitbelow
 set splitright
 
+" show all buffers in tabs, or close all tabs
+let notabs = 0
+nnoremap <silent> <F8> :let notabs=!notabs<Bar>:if notabs<Bar>:tabo<Bar>:else<Bar>:tab ball<Bar>:tabn<Bar>:endif<CR>
+
 " Tab completion
 " will insert tab at beginning of line,
 " will use completion if not at beginning
