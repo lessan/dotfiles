@@ -7,6 +7,7 @@ alias gb='git branch'
 alias gm='git merge'
 alias gd='git diff'
 alias gl='git log'
+alias gclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias gpush='git push'
 alias gpull='git pull'
 
