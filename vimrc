@@ -16,6 +16,8 @@ Plug 'junegunn/seoul256.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'kchmck/vim-coffee-script'
 
+Plug 'tpope/vim-fugitive'
+
 Plug 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'bubblegum'
