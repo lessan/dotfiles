@@ -6,8 +6,8 @@ so I haven't included them here. YMMV.
 ## installation
 Clone then run `setup.sh`:
 
-    git clone git@github.com:lessan/dotfiles.git ~/dotfiles
-    cd ~/dotfiles
+    git clone git@github.com:lessan/dotfiles.git ~/.dotfiles
+    cd ~/.dotfiles
     ./setup.sh
 
 The first time you run vim, [vim-plug](https://github.com/junegunn/vim-plug) will be downloaded
