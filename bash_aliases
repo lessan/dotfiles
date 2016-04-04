@@ -14,7 +14,3 @@ alias gpull='git pull'
 alias rs='rails server'
 
 alias ssha='eval `ssh-agent`; ssh-add'
-
-alias cdd='cd ~/drum/'
-alias cdr='cd ~/rope/'
-alias cdda='cd ~/drum_admin/'
