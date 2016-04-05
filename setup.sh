@@ -10,7 +10,7 @@ DOTFILES=$(pwd)
 
 cd
 
-relink .bash_aliases $DOTFILES/bash_aliases
+relink .bash_profile $DOTFILES/bash_profile
 relink .gemrc        $DOTFILES/gemrc
 relink .gitconfig    $DOTFILES/gitconfig
 relink .vimrc        $DOTFILES/vimrc
