@@ -14,3 +14,8 @@ alias gpull='git pull'
 alias rs='rails server'
 
 alias ssha='eval `ssh-agent`; ssh-add'
+
+alias ll="ls -lrt"
+
+eval "$(rbenv init -)"
+
