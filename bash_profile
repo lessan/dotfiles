@@ -19,3 +19,11 @@ alias ll="ls -lrt"
 
 eval "$(rbenv init -)"
 
+
+execute_in_all_subfolders() {
+  find . -type d -maxdepth 1 -exec sh -c "cd \"{}\"/ && pwd && $@" \;
+}
+alias cdand=execute_in_all_subfolders
+
+
+
