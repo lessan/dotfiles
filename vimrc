@@ -12,6 +12,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'scrooloose/nerdtree'
 Plug 'junegunn/seoul256.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'kchmck/vim-coffee-script'
@@ -64,6 +65,9 @@ colo seoul256
 set showmatch            " set show matching parenthesis
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 set cursorline           " highlight the current line
+
+set mouse=a
+set ttymouse=xterm2
 
 " Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
@@ -130,6 +134,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/log/*,*/vendor/bundle,*/vendor/bower*
 
 " --------------- keyboard shortcuts ---------------
 noremap <C-d> :sh<cr>    " ctrl-d to switch between vim and a new shell
+noremap <C-n> :NERDTreeToggle<CR>
 
 
 " --------------- application settings ---------------
