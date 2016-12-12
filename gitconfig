@@ -6,4 +6,7 @@
 	status = auto
 	branch = auto
 [push]
-	default = matching
+	default = simple
+[core]
+  editor = vim
+	excludesfile = /Users/lessan/.gitignore_global
