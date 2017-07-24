@@ -28,4 +28,20 @@ execute_in_all_subfolders() {
 alias cdand=execute_in_all_subfolders
 
 
+#export GOPATH=/usr/local/opt/go/libexec/bin
+#export PATH=$GOPATH/bin:$PATH
 
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# fasd initializer
+fasd_cache="$HOME/.fasd-init-bash"
+if [ "$(command -v fasd)" -nt "$fasd_cache" -o ! -s "$fasd_cache" ]; then
+  fasd --init posix-alias bash-hook bash-ccomp bash-ccomp-install >| "$fasd_cache"
+fi
+source "$fasd_cache"
+unset fasd_cache
+alias c='fasd_cd -d'
+
+
+#export $(ruby ~/hooroo/ted/export-aws-creds nonprod)
+export AWS_ENV_NAME=development-lessan
