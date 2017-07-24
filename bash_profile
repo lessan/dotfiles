@@ -10,8 +10,10 @@ alias gl='git log'
 alias gclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 alias gpush='git push'
 alias gpull='git pull'
+alias vi='vim'
 
 alias rs='rails server'
+alias be='bundle exec'
 
 alias ssha='eval `ssh-agent`; ssh-add'
 
