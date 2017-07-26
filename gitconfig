@@ -1,12 +1,12 @@
 [user]
-	email = lessan@gmail.com
-	name = Lessan Vaezi
+  email = lessan@gmail.com
+  name = Lessan Vaezi
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+  diff = auto
+  status = auto
+  branch = auto
 [push]
-	default = simple
+  default = simple
 [core]
   editor = vim
-	excludesfile = /Users/lessan/.gitignore_global
+  excludesfile = ~/.gitignore_global
