@@ -43,5 +43,7 @@ unset fasd_cache
 alias c='fasd_cd -d'
 
 
-#export $(ruby ~/hooroo/ted/export-aws-creds nonprod)
+export $(ruby ~/hooroo/ted/export-aws-creds default)
 export AWS_ENV_NAME=development-lessan
+
+export PATH=~/.local/bin:$PATH
