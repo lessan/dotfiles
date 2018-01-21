@@ -19,6 +19,7 @@ alias ssha='eval `ssh-agent`; ssh-add'
 
 alias ll="ls -lrt"
 
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 
@@ -31,7 +32,7 @@ alias cdand=execute_in_all_subfolders
 #export GOPATH=/usr/local/opt/go/libexec/bin
 #export PATH=$GOPATH/bin:$PATH
 
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+#test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 # fasd initializer
 fasd_cache="$HOME/.fasd-init-bash"
@@ -43,7 +44,7 @@ unset fasd_cache
 alias c='fasd_cd -d'
 
 
-export $(ruby ~/hooroo/ted/export-aws-creds default)
+#export $(ruby ~/hooroo/ted/export-aws-creds default)
 export AWS_ENV_NAME=development-lessan
 
 export PATH=~/.local/bin:$PATH

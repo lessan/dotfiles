@@ -4,6 +4,5 @@
 :bulk_threshold: 1000
 :sources:
 - https://rubygems.org/
-- http://gems.in.jqdev.net/
 :update_sources: true
 :verbose: true
