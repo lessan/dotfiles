@@ -17,3 +17,5 @@ relink .vimrc            $DOTFILES/vimrc
 relink .gemrc            $DOTFILES/gemrc
 relink .tmux.conf        $DOTFILES/tmux.conf
 relink .gitignore_global $DOTFILES/gitignore_global
+relink .aprc             $DOTFILES/aprc
+relink .irbrc            $DOTFILES/irbrc
