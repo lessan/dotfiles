@@ -6,7 +6,7 @@
   status = auto
   branch = auto
 [push]
-  default = simple
+	default = upstream
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
