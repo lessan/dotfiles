@@ -10,8 +10,13 @@ DOTFILES=$(pwd)
 
 cd
 
-# relink .bash_aliases     $DOTFILES/bash_aliases Ubuntu
-relink .bash_profile     $DOTFILES/bash_aliases
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # OSX
+  relink .bash_profile   $DOTFILES/bash_aliases
+else
+  # Ubuntu etc
+  relink .bash_aliases   $DOTFILES/bash_aliases
+fi
 relink .gemrc            $DOTFILES/gemrc
 relink .gitconfig        $DOTFILES/gitconfig
 relink .vimrc            $DOTFILES/vimrc
